@@ -2,8 +2,8 @@
   "id": "companion-bar",
   "title": "Companion Bar",
   "description": "A themed roster window showing what the party's companions are up to: resting, keeping watch, brooding, cooking, reading and more. The GM sets each companion's activity and can raise a wax-seal \"!\" when a companion wishes to speak. Players see it live, read-only.",
-  "version": "1.0.0",
-  "authors": [{ "name": "PawnKing20" }],
+  "version": "1.0.1",
+  "authors": [{ "name": "Wingz" }],
   "license": "LICENSE",
   "readme": "README.md",
   "compatibility": {
