@@ -1,8 +1,9 @@
 name: Release
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - "v*"
 
 permissions:
   contents: write
@@ -27,9 +28,11 @@ jobs:
       - name: Build module.zip
         run: zip -r module.zip module.json LICENSE README.md scripts styles
 
-      - name: Attach files to the release
+      - name: Publish the release
         uses: softprops/action-gh-release@v2
         with:
+          name: ${{ github.ref_name }}
+          generate_release_notes: true
           files: |
             module.json
             module.zip
